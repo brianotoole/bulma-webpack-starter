@@ -1,0 +1,11 @@
+// Bulma - https://bulma.io/documentation/overview/start/
+
+// Import the initial variables
+@import "node_modules/bulma/sass/utilities/initial-variables";
+@import "node_modules/bulma/sass/utilities/functions";
+
+// custom variables
+@import "./base/variables";
+
+// Import the rest of Bulma
+@import "node_modules/bulma/bulma";
