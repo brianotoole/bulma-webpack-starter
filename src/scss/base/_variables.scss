@@ -1,5 +1,5 @@
 // Variables
-// 2. Set your own initial variables
+// Set your own initial variables & override Bulma's
 // https://bulma.io/documentation/overview/variables/
 
 // Set color variables
@@ -14,53 +14,34 @@ $success: hsl(141, 71%, 48%);
 $warning: hsl(48, 100%, 67%);
 $danger: hsl(348, 100%, 61%);
 
+// Colors: Brand
+$primary: $primary; // green
+$secondary: #555; //dark gray
+$tertiary: #6bbfff; // light blue
+
 // Set font variables
 $family-primary: "Merriweather", "Georgia", serif;
 
 // Generic variables
 $body-family: $family-primary;
 $body-background-color: $white;
-$body-color: $text;
+$body-color: $dark;
 
-// Use the new serif family
-$family-primary: $family-serif;
-
-
-
-// Colors: Brand
-$color-primary: #19ab6a; // green
-$color-secondary: #3f465d; //dark gray
-$color-tertiary: #6bbfff; // light blue
-
-// Colors: Brand-Darkens
-$color-primary-dark: darken($color-primary, 10%);
-$color-secondary-dark: darken($color-secondary, 10%);
-$color-tertiary-dark: darken($color-tertiary, 10%);
-
-// Colors: Generic
-$color-body: $color-secondary;
-$color-black: #111;
-$color-white: #fff;
-$color-gray: #dbd8d6;
-$color-gray-light: #eee;
-
-// Colors: Components
-$color-link: $color-secondary;
-$color-link-dark: darken($color-primary-dark, 10%);
-$color-border: rgba($color-gray, 0.1);
-$color-border-dark: darken($color-border, 10%);
-$color-border-light: rgba($color-white, 0.1);
-$color-success: #377f31; // Green
-$color-error: #880e14; // Red
-$color-warning: #dba909; // Yellow
-$color-code: #dd1144;
-
-// Font Stacks
-$font-heading: "Helvetica", sans-serif; //headings
-$font-body: "Helvetica", sans-serif; //body
-$font-monospace: Menlo, Monaco, monospace;
 // Breakpoints, using rems
 // #size % 16(default body font-size) == xrem (or, 320%16 == 20)
+
+// Responsiveness
+
+// The container horizontal gap, which acts as the offset for breakpoints
+$gap: 32px;
+// 960, 1152, and 1344 have been chosen because they are divisible by both 12 and 16
+$tablet: 769px;
+// 960px container + 4rem
+$desktop: 960px + (2 * $gap);
+// 1152px container + 4rem
+$widescreen: 1152px + (2 * $gap);
+// 1344px container + 4rem
+$fullhd: 1344px + (2 * $gap);
 
 $bp-xs: 20rem; //320
 $bp-sm: 30rem; //480
@@ -68,6 +49,3 @@ $bp-md: 62.4375rem; //999
 $bp-lg: 64rem; //1024
 $bp-xl: 80rem; //1280
 $bp-xxl: 90rem; //1440
-
-// Sizing
-$font-size-body: 100%; //uses a relative size: changing will adjust scale of site

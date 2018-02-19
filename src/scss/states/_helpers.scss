@@ -1,51 +1,4 @@
 // Helpers
-// Colors: text
-.text-white {
-  color: $color-white
-}
-
-.text-primary {
-  color: $color-primary
-}
-
-.text-secondary {
-  color: $color-secondary
-}
-
-.text-body {
-  color: $color-body
-}
-
-.text-uppercase {
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-// Colors: background
-.bg-white {
-  background: $color-white;
-  color: $color-body;
-}
-
-.bg-primary {
-  background: $color-primary;
-  color: $color-white;
-}
-
-.bg-secondary {
-  background: $color-secondary;
-  color: $color-body;
-}
-
-.bg-gray {
-  background: $color-gray;
-  color: $color-body;
-}
-
-.bg-black {
-  background: $color-black;
-  color: $color-white;
-}
 
 // Images: background
 .bg-img-cover {
@@ -61,7 +14,7 @@
       height: 100%;
       top: 0;
       left: 0;
-      background-color: rgba($color-secondary, 0.9);
+      background-color: rgba($black, 0.9);
       z-index: -1;
     }
   }
@@ -69,10 +22,10 @@
 
 // Rules & Borders
 .hr {
-  border-color: $color-black;
+  border-color: $black;
   border-top-width: 2px; //hr-colors
   &.hr-light {
-    border-color: $color-white;
+    border-color: $white;
   } //hr-sizes
   &.hr-small {
     width: 50px;
@@ -82,21 +35,6 @@
       margin-left: 0;
     }
   }
-}
-
-.border-bottom {
-  border-bottom: 2px solid $color-border;
-}
-
-// Layouts
-.full-height {
-  height: 100vh;
-}
-
-.vertical-center {
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: center;
 }
 
 .padded {
@@ -192,8 +130,8 @@
     position: absolute;
     width: 24px;
     height: 24px;
-    border-right: 2px solid $color-secondary;
-    border-bottom: 2px solid $color-secondary;
+    border-right: 2px solid $dark;
+    border-bottom: 2px solid $dark;
     right: 30px;
     bottom: calc(50% - 15px);
     transform: rotate(-45deg);

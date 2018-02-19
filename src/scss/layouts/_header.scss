@@ -17,7 +17,7 @@
   transform: translateY(0);
   transition: background 0.2s ease-in;
   @media (max-width: $bp-md) {
-    background-color: $color-white;
+    background-color: $white;
   }
   &.is-fixed {
     position: fixed;
@@ -27,7 +27,7 @@
 // Logo
 .logo {
   a {
-    color: $color-black;
+    color: $black;
   }
   img {
     margin: 0;
@@ -52,13 +52,12 @@
   }
   a {
     margin: 0 20px;
-    color: $color-secondary;
+    color: $primary;
     font-size: rem(16);
     font-weight: bold;
     transition: 0.2s color ease-out;
     &:hover {
       text-decoration: none;
-      color: $color-primary;
     }
     &.has-nav-line {
       position: relative;
@@ -67,13 +66,13 @@
         position: absolute;
         width: 2px;
         height: 15px;
-        background: $color-gray;
+        background: $dark;
         margin-top: 4px;
         margin-left: 19px;
       }
     }
     &.selected {
-      color: $color-primary;
+      color: $primary;
     }
   }
   .btn {
@@ -95,7 +94,7 @@
   opacity: 0;
   visibility: hidden;
   position: fixed;
-  background: $color-secondary;
+  background: $dark;
   height: 100vh;
   width: 100%;
   top: 0;
@@ -120,7 +119,7 @@ body.nav-open {
   position: fixed;
   overflow-y: hidden;
   .line {
-    background: $color-white;
+    background: $white;
   }
 }
 
@@ -140,11 +139,9 @@ body.nav-open {
         animation-fill-mode: forwards;
       }
     }
-  a,
-  .btn.muted {
-    display: block;
+  a {
     padding: 10px 0;
-    color: $color-white;
+    color: $white;
     border: none;
     margin: 0;
     font-weight: bold;
@@ -153,8 +150,7 @@ body.nav-open {
     text-decoration: none;
     &:hover,
     &:focus {
-      background: none;
-      color: $color-primary;
+      color: $primary;
       outline: 0;
     }
   }
@@ -183,7 +179,7 @@ $translateX: 0;
     display: block;
     position: absolute;
     right: 0;
-    background: $color-black;
+    background: $white;
     width: $width-line;
     height: $height-line;
     transition: all $transition-time;

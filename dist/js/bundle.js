@@ -96,7 +96,7 @@ $(document).keydown(function (e) {
 /* 1 */
 /***/ (function(module, exports) {
 
-throw new Error("Module build failed: ModuleBuildError: Module build failed: \n$body-color: $text;\n            ^\n      Undefined variable: \"$text\".\n      in /Applications/MAMP/htdocs/bulma/src/scss/base/_variables.scss (line 23, column 14)\n    at /Applications/MAMP/htdocs/bulma/node_modules/webpack/lib/NormalModule.js:141:35\n    at /Applications/MAMP/htdocs/bulma/node_modules/loader-runner/lib/LoaderRunner.js:364:11\n    at /Applications/MAMP/htdocs/bulma/node_modules/loader-runner/lib/LoaderRunner.js:230:18\n    at context.callback (/Applications/MAMP/htdocs/bulma/node_modules/loader-runner/lib/LoaderRunner.js:111:13)\n    at Object.onRender (/Applications/MAMP/htdocs/bulma/node_modules/sass-loader/index.js:273:13)\n    at Object.<anonymous> (/Applications/MAMP/htdocs/bulma/node_modules/sass-loader/node_modules/async/dist/async.js:2257:31)\n    at Object.callback (/Applications/MAMP/htdocs/bulma/node_modules/sass-loader/node_modules/async/dist/async.js:958:16)\n    at options.error (/Applications/MAMP/htdocs/bulma/node_modules/node-sass/lib/index.js:289:32)");
+// removed by extract-text-webpack-plugin
 
 /***/ }),
 /* 2 */
